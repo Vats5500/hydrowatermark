@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HydroMark Label Cost Estimator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HydroMark Label Cost Estimator</h1>
+        <label for="quantity">Quantity of Bottles:</label>
+        <input type="number" id="quantity" placeholder="Enter number of bottles">
+
+        <label for="costPerLabel">Cost per Label (₹):</label>
+        <input type="number" id="costPerLabel" placeholder="Enter cost per label">
+
+        <label for="designCost">Designing Cost (₹):</label>
+        <input type="number" id="designCost" placeholder="Enter designing cost (optional)" value="0">
+
+        <button onclick="calculateTotal()">Estimate Cost</button>
+
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
